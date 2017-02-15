@@ -831,3 +831,8 @@ header .intro-text {
     height: 100%;
     margin-bottom: 5%;
 }
+
+#logo {
+	width: 20%;
+	margin : auto;
+}
