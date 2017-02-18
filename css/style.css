@@ -769,8 +769,6 @@ header .intro-text {
 .portfolio-modal  {
    	background-color: rgba(255, 255, 255, 0.3);
     padding: 8%;
-    /*border: 1px solid #888;*/
-    /*width: 90%; */
     min-height: 100%;
 }
 
@@ -834,5 +832,15 @@ header .intro-text {
 
 #logo {
 	width: 20%;
-	margin : auto;
+	margin : 0px auto;
+	
+}
+
+.content-img {
+	margin : 0px auto;
+	padding-bottom: 20px;
+}
+
+.project-descitpion {
+	width: 100%;
 }
