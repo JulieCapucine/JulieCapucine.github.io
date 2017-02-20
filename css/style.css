@@ -202,6 +202,10 @@ hr {
 .section-title.center {
 	padding: 25px 0 45px 0;
 }
+
+#header {
+	height: 100% !important;
+}
 /* About Section */
 #about {
 	padding: 100px 0;
