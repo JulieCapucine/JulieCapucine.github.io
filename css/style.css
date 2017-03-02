@@ -45,6 +45,14 @@ p.intro {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+span.about {
+	font-size: 20px;
+	font-weight: 900;
+	margin: 12px 0 0;
+	line-height: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
 small {
 	font-size: 15px;
 }
