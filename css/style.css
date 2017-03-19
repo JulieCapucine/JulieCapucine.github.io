@@ -164,9 +164,9 @@ hr {
 	color: #fff;
 }
 .btn-default {
-	color: #fff;
+	color: #000;
 	background-color: transparent;
-	border-color: #fff;
+	border-color: #000;
 	padding: 10px 20px;
 	margin: 0;
 	font-size: 16px;
@@ -199,8 +199,8 @@ hr {
 	height: auto;
 	padding: 100px 0;
 	text-align: center;
-	color: #fff;
-	background: url(../img/intro-bg.jpg) no-repeat center top;
+	color: #000;
+	background: url(../img/trianglesLogo.png) no-repeat center top;
 	background-color: #048A81;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -674,7 +674,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	height: 100%;
 	padding: 0;
 	text-align: center;
-	color: #fff;
+	color: #000;
 }
 .intro H1 {
 	font-size: 60px;
@@ -686,6 +686,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro .intro-text {
 	/*max-width: 75%;*/
+	
 }
 .intro .intro-text p {
 	font-family: 'Lato', sans-serif;
@@ -697,8 +698,8 @@ section {
 	padding: 120px 0;
 }
 header .intro-text {
-	padding-top: 300px;
-	padding-bottom: 200px;
+	padding-top: 50%;
+	/*padding-bottom: 200px;*/
 }
 .timeline:before {
 	left: 50%;
