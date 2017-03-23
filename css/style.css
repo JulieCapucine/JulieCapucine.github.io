@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-	color : #048A81;
+	color : #0375B4;
 	font-size: 30px;
 	font-weight: 900;
 }
@@ -68,7 +68,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #048A81;
+	color: #0375B4;
 }
 ul, ol {
 	list-style: none;
@@ -100,7 +100,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #048A81;
+	background: #0375B4;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	border: 0;
@@ -146,13 +146,13 @@ hr {
 }
 .navbar-custom .nav li a:hover {
 	outline: 0;
-	color: #048A81;
+	color: #0375B4;
 	background-color: transparent;
 }
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
 	outline: 0;
 	background-color: transparent;
-	color: #048A81;
+	color: #0375B4;
 }
 .navbar-custom .nav li.active {
 	outline: 0;
@@ -186,8 +186,8 @@ hr {
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
 	color: #fff;
-	background-color: #048A81;
-	border-color: #048A81;
+	background-color: #0375B4;
+	border-color: #0375B4;
 }
 .btn-primary i.fa {
 	margin-right: 10px;
@@ -201,7 +201,7 @@ hr {
 	text-align: center;
 	color: #000;
 	background: url(../img/trianglesLogo.png) no-repeat center top;
-	background-color: #048A81;
+	background-color: #0375B4;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -235,7 +235,7 @@ hr {
 /* Skills Section */
 #skills {
 	padding: 100px 0;
-	background: #048A81;
+	background: #0375B4;
 }
 #skills h2 {
 	color: #fff;
@@ -279,7 +279,8 @@ hr {
 }
 /* Portfolio Section */
 #portfolio {
-	padding: 80px 0;
+	padding-top: 80px;
+	padding-bottom: 0px;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(49%, #f4f5f6), color-stop(100%, #ffffff)); /* Chrome,Safari4+ */
@@ -289,6 +290,11 @@ hr {
 	background: linear-gradient(to bottom, #ffffff 0%, #f4f5f6 49%, #ffffff 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
+
+#portfolio div.pf-container {
+	margin: 2% auto 7% auto;
+}
+
 .categories {
 	padding-bottom: 30px;
 	text-align: center;
@@ -301,7 +307,7 @@ ol.type li {
 	margin-left: 20px;
 }
 ol.type li a {
-	background: #048A81;
+	background: #0375B4;
 	color: #fff;
 	padding: 8px 14px;
 	font-size: 18px;
@@ -415,7 +421,7 @@ ol.type li a:hover {
 /* Achivements Section */
 #achievements {
 	padding: 100px 0;
-	background: #048A81;
+	background: #0375B4;
 }
 #achievements h2 {
 	color: #fff;
@@ -545,7 +551,7 @@ ol.type li a:hover {
 #contact {
 	padding: 100px 0 40px 0;
 	color: #131515;
-	background: #048A81;
+	background: #0375B4;
 }
 #contact h2 {
 	color: #fff;
@@ -665,7 +671,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #a0a5a5;
 }
 #footer a:hover {
-	color: #048A81;
+	color: #0375B4;
 }
 
 /* Media Queries */
