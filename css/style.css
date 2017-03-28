@@ -503,7 +503,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 header .intro-text {
-	padding-top: 550px;
+	position:absolute;
+ 	top:60%;
+ 	right: 45%;
+ 	width:200px;
 	/*padding-bottom: 200px;*/
 }
 
@@ -522,7 +525,7 @@ header .intro-text {
 .intro .intro-text p {
 	font-size: 20px;
 	margin-bottom: 20px;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 section {
 	padding: 120px 0;
