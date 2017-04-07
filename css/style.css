@@ -193,20 +193,6 @@ hr {
 	margin-right: 10px;
 }
 /* Home Section */
-#header {
-	display: table;
-	width: 100%;
-	height: auto;
-	padding: 100px 0;
-	text-align: center;
-	color: #000;
-	background: url(../img/trianglesLogo.png) no-repeat center top;
-	background-color: #0375B4;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
 .section-title.center {
 	padding: 25px 0 45px 0;
 }
@@ -586,6 +572,8 @@ section {
    top:0;
    right:0;
    margin: 2%;
+   background-color: #fff;
+   border-radius: 12px;
   }
 
 

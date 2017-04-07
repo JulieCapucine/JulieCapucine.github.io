@@ -27,7 +27,7 @@ class TrianglePoints{
 var bigTriangles = new Array(300);
 var smallTriangles = new Array(300);
 var totalColoredTriangle = 200;
-var coloredTriangle;
+var coloredTriangle = 0;
 var mvt = 60;
 var nbMvt = 20;
 var rayon = 50;
@@ -61,15 +61,15 @@ function fillTrianglesArray(tailleInf,tailleMax, array) {
 function setup() {
    canvas = createCanvas(document.documentElement.clientWidth - 25, document.documentElement.clientHeight);
    canvas.parent("mySketch");
-   logo = loadImage("img/logonoir.png");
- /*  noLoop();*/
+   /*logo = loadImage("logonoir.png");*/
+   noLoop();
    fillTrianglesArray(20, 25, bigTriangles);
    fillTrianglesArray(0, 10, smallTriangles);
-   coloredTriangle = 0;
+   
 }
 
 function draw() {
-	//background(255);
+	background(255);
 	
 	for (var i = 0; i < bigTriangles.length; i++) {
 		
@@ -77,33 +77,18 @@ function draw() {
 	}
 
 	for (var i = 0; i < smallTriangles.length; i++) {
-		/*stroke(0, 0, 0);
-        fill(0,0,0);*/
         drawTriangle(smallTriangles[i]);
 	}
 	
-	//image(logo, (document.documentElement.clientWidth - 25) /2, 0);
-	/*var i = 0;
-      triangleB(1000, i, 0, 10);
-      triangleB(200, i, 20,30);
-      triangleB(50, i, 20, 60);*/
- /*     
-  if (mouseIsPressed) {
-    fill(0);
-  } else {
-    fill(255);
-  }
-  ellipse(mouseX, mouseY, 80, 80);*/
+	
+
 }
 
 function mouseMoved(){
 	for (var i = 0; i < smallTriangles.length; i++) {
-		stroke(0, 0, 0);
-        fill(0,0,0);
         if (abs(smallTriangles[i].x1 - mouseX) < rayon){
         	if(abs(smallTriangles[i].y1 - mouseY) < rayon) {
-        		console.log("ici");
-        	    smallTriangles[i].translateX(random(-mvt,mvt));
+        	  smallTriangles[i].translateX(random(-mvt,mvt));
        			smallTriangles[i].translateY(random(-mvt,mvt));
        			drawTriangle(smallTriangles[i]);
         	}
@@ -112,15 +97,24 @@ function mouseMoved(){
 	}	
 }
 
+function windowResized() {
+  resizeCanvas(document.documentElement.clientWidth - 25, document.documentElement.clientHeight);
+  fillTrianglesArray(20, 25, bigTriangles);
+  fillTrianglesArray(0, 10, smallTriangles);
+  coloredTriangle = 0;
+  redraw();
+}
+
 function drawTriangle(triangleToDraw) {
 
     if (coloredTriangle < totalColoredTriangle) {
         var colorR = random(0, 1);
         var colorV = random(0, 1);
         var colorB = random(0, 200);
+
         stroke(colorR, colorV, colorB);
         fill(colorR, colorV, colorB);
-        coloredTriangle ++;           
+        coloredTriangle ++;   
     } else {
         stroke(0, 0, 0);
         fill(0,0,0);
