@@ -61,6 +61,18 @@ $('#nav').affix({
     });
   });
 
+  $(document).ready(function(){
+    //Preloader
+    $(window).load(function() {
+      var preloaderFadeOutTime = 3;
+      function hidePreloader(){
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+      }
+      hidePreloader();
+    });
+  });
+
 }());
 
 

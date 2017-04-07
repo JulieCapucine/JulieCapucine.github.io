@@ -28,12 +28,12 @@
     padding-top: 60rem;
 }
 
-#overlay .button a, #overlay .button a:active {
+#overlay.button a, #overlay .button a:active {
 	background-color: white;
 	color: #131515;
 }
 
-#overlay a:hover {
+#overlay .button a:hover {
 	background-color: #131515;
 	color: white;
 }
