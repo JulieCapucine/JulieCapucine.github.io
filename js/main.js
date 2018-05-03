@@ -217,6 +217,8 @@ $(window).load(function() {
 function Main() {
 	var link = document.location.href.split("/");
 	var linkIO = document.location.href.split(".");
+	console.log(linkIO);
+	console.log(linkIO[linkIO.length - 1]);
 	if (((link[link.length - 1]) == "index.html") || (linkIO[linkIO.length - 1] == "io")) {
 		OnStartAndResize();
 		SetCurrentPage();
