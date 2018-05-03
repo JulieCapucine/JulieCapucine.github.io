@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Julie PUECH - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+	<script language="javascript" type="text/javascript" src="js/p5.js"></script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+	<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+</head>
+<body>
+	<div class="content-project">
+		<div class="row right">
+			<a href="index.html#projects"> <img class="project-close" src="img/close.png"> </a>
+		</div>
+		<div class="row">
+			<h2 class="text-design"> KAA THE KOALA </h2>
+			<p> november - december 2017 </p>
+		</div>
+		<div class="row right">
+			<h4 class="text-design"> Group project </h4>
+			<p> developer </p>
+		</div>
+        <div class="row title-project">
+            <p> Kaa the Koala is about managing resources to restore a trashed forest while traversing between the waking and ghostly states and dodging threats. </p>
+
+             <div class="col-sm-12 project-img">
+            	<img src="img/projects/kaa-character.png">
+            </div>
+
+            <h2 class="text-design title-project"> Essence Statement </h2>
+			<p>	Help Kaa the Koala on her journey to restore the lost Eucalyptus forest. Shifting between her wake state and her out-of-body ghost state when asleep, Kaa must utilize her abilities from both states to efficiently reduce trash and plant trees around the world before she gets killed by wild predators and mysterious ominous soul-burning lights </p>
+
+            <h2 class="text-design title-project"> Game Overview </h2>
+            <p> Kaa the Koala is a 2.5D isometric resource management game. The goal focuses on increasing the Tree:Trash ratio around different world zones to a certain value. The character roams around the world traveling to different biomes and terrains to collect trash, which instantly gives the character seeds, which they can then plant into trees while managing the character’s energy level. A depleted energy level changes the state of the character from Awake to Asleep, shifting the player’s abilities as well as the surrounding environment. </p>
+
+			<p> In its Awake state, the player moves around the map collecting trash piles, which instantly and automatically turn into seeds that appear in the player’s inventory. With every active movement or step, Awake Kaa loses energy, but can restore some energy by eating leaves from planted trees. Trees can run out of leaves and they cast shadows that allow Kaa to hide from Predators and Ominous Lights, so the player must plant seeds in strategic locations and arrangements. The location of these planted trees and their shadows will impact Kaa in both the awake and asleep states. The more trees Awake Kaa plants, the more times she can potentially restore energy and guard from threats. </p>
+
+			<p>Once Kaa runs out of energy, which is displayed on the energy bar, she falls asleep and unleashes Ghost Kaa, who is then controlled by the player as physical Kaa sleeps. In this asleep state, ominous light rays will appear, scanning the land from side to side. Ghost Kaa loses health if she is hit by these light rays, and dies once the health bar goes down. She can be safe by staying in the shadows of the trees. With a one-minute timer before she wakes up, Ghost Kaa can rearrange trash piles in the world to help her awake counterpart. </p>
+
+			<p>The player wins once they achieve a certain ratio (trees to trash) in the world. This can be a challenge if the player decides to chew more than Kaa can bite (bite off leaves and kill too many trees).
+ 			</p>
+
+ 			<div class="col-sm-12 project-img">
+ 				<iframe width="857" height="507" src="https://www.youtube.com/embed/rFCEdPq0CnI" frameborder="0" allowfullscreen></iframe>
+ 			</div>
+
+ 			 <h2 class="text-design title-project"> Technical Challenges </h2>
+
+ 			 <p> This project is still a prototype that was developed using Unity. It was my first time using this software so I was excited to see what I could do with it. </p>
+ 			 <p> We started with a very simple prototype to test out our mechanics and to test out 2 differents cameras angles. </p>
+
+ 			 <div class="row">
+ 			 	 <div class="col-sm-6 project-img">
+	            	<img src="img/projects/kaa-cam-1.png">
+	            </div>
+	            <div class="col-sm-6 project-img">
+	            	<img src="img/projects/kaa-cam-2.png">
+	            </div>
+ 			 </div>
+
+ 			 <p> After deciding on the isometric camera, a lot of challenges arose. </p>
+ 			 <p> First, I had to figure out the proper player movements so it felt intuitive yet fit with our different koala sprites. </p>
+ 			 <p> Second, and probably the biggest challenge, was to create the lights and the shadows in the asleep state. For the shadows of the tree, I was quite limited. We wanted to have proper shadows cast by the lights but as our game is 2.5D, the trees are actually 2D assets. Their shadow was not big enough and consistent enough for a koala to hide in. To overcome this problem, we created assets for the shadows, that I grouped with the trees and that I would rotate when in the night. That also solved an other issue related to the lights and shadows : detecting when Kaa was in the shadow. As the shadow is a refuge for Kaa, the detection had to be precise. Having 2D assets for the shadows allowed me to add colliders to them and make the detection easier than if I had to do raycasting to know if the koala was in reach of the light(s). 
+ 			 <p> The third challenge was, as I mentionned before, the 2.5D in the game. The ground tiles are 3D but all the rest are 2D assets in a 3D world, with Kaa moving on x and y. The main struggle was to make sure the detection zones around the trash and the trees were wide enough so it woudn't look weird in when the koala would walk behind.</p>
+
+	</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+ 
+</html>

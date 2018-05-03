@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Julie PUECH - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+	<script language="javascript" type="text/javascript" src="js/p5.js"></script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+	<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+</head>
+<body>
+	<div class="content-project">
+		<div class="row right">
+			<a href="index.html#projects"> <img class="project-close" src="img/close.png"> </a>
+		</div>
+		<div class="row">
+			<h2 class="text-design"> DELAUNAY’S INTERACTIVE DREAM </h2>
+			<p> january - march 2017 </p>
+		</div>
+		<div class="row right">
+			<h4 class="text-design"> Group project </h4>
+			<p> art director & visual integrator (C++)</p>
+		</div>
+        <div class="row title-project">
+            <p> DELAUNAY’S INTERACTIVE DREAM is an art installation exploring the interactions between a spectator and a sonic and graphic environment. This project was made in a team of four and I was the art director and the visual integrator while taking part in the ideation and user experience discussions about the project as well.</p>
+
+            <h2 class="text-design title-project"> The Concept </h2>
+			<p>	It all started with wanting to explore how one’s gestures could influence a constrained entity. We wanted to look into how we could use the Leap Motion (a hand gesture tracking device) to put the user at the centre of the art piece.   </p>
+			<p> We mapped different gestures to different sound effects and visual morphings.  As the user starts interacting with our creation, he starts influencing its evolution, making it his own creation. It is as if he was in the mind of the artist when he was dreaming or in the creative zone, seeing all the possibilities that were offered to him and deciding on which one he liked the most. 
+            </p>
+             <div class="col-sm-12 project-img">
+            	<iframe width="857" height="507" src="https://player.vimeo.com/video/217138011" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2 class="text-design title-project"> Designing several moods </h2>
+            <p> We made 3 different moods (ambiances) based on the work of Robert and Sonia Delaunay. Choosing to work based on the Delaunays came quite naturally as they are famous French artists, known worldwide, that have a diverse yet very unique and geometric style. </p>
+            <p>
+            	<b> The Childish Mood: </b> In this mood, I got inspiration from the ‘Endless Rhythm’ paintings of Robert Delaunay. The graphic shapes are just lines and circles and the 3 colors are very simple. The movements of the shapes are quite joyful and full of life, rotating quickly and bouncing. The music has also a very joyful and innocent touch, and the effects that the user can trigger include children voices and baby cries.
+            </p>
+            <div class="row">
+	            <div class="col-sm-6 project-img">
+	            	<img src="img/projects/childish_1.png">
+	            </div>
+	            <div class="col-sm-6 project-img">
+	            	<img src="img/projects/childish_2.png">
+	            </div>
+	        </div>
+           	<p>
+			<b> The Robotic Mood: </b> this mood is inspired by textile patterns from Sonia Delaunay. Using just squares, but playing with their opacity and their anchor points, we were able to achieve a robotic yet not too mechanical feel. Users are able to trigger glitches effects and direction changes among other things. The sound is also really embracing how robots can be loud and metallic. 
+			</p>
+			<div class="row">
+	            <div class="col-sm-6 project-img">
+	            	<img src="img/projects/robotic_1.png">
+	            </div>
+	            <div class="col-sm-6 project-img">
+	            	<img src="img/projects/robotic_2.png">
+	            </div>
+	        </div>
+			<p>
+			<b> The Psychedelic mood: </b> this mood was inspired by several graphic elements from both Robert and Sonia, that were placed more in the background of their work, yet were still important. The colors can be inverted by a user gesture, as well as the speed and the scale of the elements. The sound has some psychedelic feature as well, embracing and enhancing the global feel.
+            </p>
+            <div class="row">
+	            <div class="col-sm-6 project-img">
+	            	<img src="img/projects/psyche_1.png">
+	            </div>
+	            <div class="col-sm-6 project-img">
+	            	<img src="img/projects/psyche_2.png">
+	            </div>
+	        </div>
+           
+             <h2 class="text-design title-project"> A little technical </h2>
+            <p>
+            	We made the whole using openFrameworks (C++) and the Siddons for the Leap Motion and Ableton, as well as Ableton Live for the live streaming and interactions with sound. <br>
+				All the graphics are SVG paths, that we store in a JSON file for each mood. All interactions have a lifespan, a selection zone, and a corresponding gesture and are also mapped in several JSON files.
+            </p>
+             <h2 class="text-design title-project"> My experience : Art direction and visual integration </h2>
+            <p> As the art director, I made sure we had our own visual identity while keeping the essence of the Delaunays. I explored several paths before settling on the current visuals. The biggest and hardest challenge of the project was the visual integration. How do we load all those shapes and how do we morph them and make them move, scale, translate without dropping the frame rate (as our installation is live). It was also a struggle to position every shape the way I wanted with the solution we chose (JSON files of SVG paths and coordinates) because it was easier on the development aspect. <br>
+			Adding the glitches was another challenge, because it dealt with the VBO, shaders and mask layers all together.</p>
+			<p>
+			Another big struggle we encountered was linking Ableton to openFramework and play specific tracks of a designated session. We had a few bugs, version compatibility issues and edge cases, but we managed to make it work. 
+			</p>
+			<p>
+			This project was my first very challenging project but it opened my my mind on how technology and art can blend together and fit right in to create an intriguing and subtile mix that make you go ‘WOW’.
+			</p>
+        </div>
+	</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+ 
+</html>

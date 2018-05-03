@@ -3,604 +3,361 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Julie PUECH - Portfolio</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
-<!-- Stylesheet
-	================================================== -->
-	<link rel="stylesheet" type="text/css"  href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-  <link rel="stylesheet" type="text/css"  href="css/sketch.css">
-    
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- preloader -->
-      <div class="spinner-wrapper">
-        <div class="sk-folding-cube">
-          <div class="sk-cube1 sk-cube"></div>
-          <div class="sk-cube2 sk-cube"></div>
-          <div class="sk-cube4 sk-cube"></div>
-          <div class="sk-cube3 sk-cube"></div>
-        </div>
-      </div>
-
-    	<!-- Header -->
-    	<header id="header">
-      <div id="canvas-wrap" class=>
-        <div id="mySketch"></div>
-        <div id="overlay">
-          <div class="topcorner"> <a href="index.html">  <h3> Francais </h3></a>/     
-              <a href="index-english.html">English</a>
+ 	<title>Julie PUECH - Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css"  href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+  <script language="javascript" type="text/javascript" src="js/p5.js"></script>
+  <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+  <script type="text/javascript" src="js/jquery.isotope.js"></script> 
+</head>
+<body onresize="OnStartAndResize()">
+	<div id="drawing-space">
+	</div>
+  <div class="overlay active" id="menu-page">
+      <div id="my-nav">
+          <div class="row">
+            <h4 class="col-md-12 text-design center"> INTERACTIVE MEDIA DEVELOPER </h4>
           </div>
-          <img src="logonoir.svg"> 
-          <div class="button">
-            <a href="#about" class="btn btn-default btn-lg js-scrollTo">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-    	</header>
-    		<!-- Navigation -->
-    		<div id="nav">
-    			<nav class="navbar navbar-custom">
-    				<div class="container">
-    					<div class="navbar-header">
-    						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-    						<a class="navbar-brand js-scrollTo" href="#page-top">Julie PUECH </a> </div>
-
-    						<!-- Collect the nav links, forms, and other content for toggling -->
-    						<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-    							<ul class="nav navbar-nav">
-    								<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-    								<li class="hidden"> <a href="#page-top"></a> </li>
-                      <li> <a class="js-scrollTo" href="#about">A propos</a> </li>
-    								<li> <a class="js-scrollTo" href="#portfolio">Portfolio</a> </li>
-    							
-                   <li> <a class="js-scrollTo" href="#contact">Contact</a> </li>
-                 </ul>
-               </div>
-             </div>
-           </nav>
-         </div>
-<!-- About Section -->
-<div id="about">
- <div class="container">
-  <div class="section-title text-center center">
-   <h2>A propos</h2>
-   <hr>
- </div>
- <div class="row">
-   <div class="col-md-12 text-center"><img src="img/about2.jpg" class="img-responsive"></div>
-   <div class="col-md-8 col-md-offset-2">
-    <div class="about-text">
-    <p class="text-center"> Bonjour & Bienvenue! </p>
-    <p>  Je m'appelle Julie PUECH et voici mon e-portfolio. Vous pouvez regarder mes projet, me contacter ou juste flanner!</p>
-    <p class="text-center"> Mon parcours </p>
-    <p> Je suis actuellement à l'<a href="http://www.ingenieur-imac.fr/"><strong>IMAC</strong></a>, une école d'ingénieur melant art et sciences : programmation pour les jeux vidéos (C, C++, OpenGL, Java), pour le web (HTML, CSS, Javascript), communication, design sont au programme.
-     Sortant de classe préparatoire Maths Physique (MP) et ayant un veritable interet pour le dessin et l'art en général, l'IMAC m'a permis d'allier mes deux domaines de prédilection/</p>
-      <p class="text-center"> Qui suis - je ? </p>
-    <p> Curiosité, originalité et créativité sont mes maîtres mots. Je suis toujours à l'affut des nouvelles tendances graphiques et de nouveaux suports ou technologies pour experimenter. A travers mes nombreux voyages, j'ai pu interagir avec différentes cultures et différentes façons d'appréhender l'art et la création, ce qui m'influence au quotidien sur mes projets.</p>
-      <p class="text-center"><a class="btn btn-primary" href="./CV_JuliePUECH_French.pdf" target="_blank"><i class="fa fa-download"></i> Télécharger mon CV</a></p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-         <!-- Portfolio Section -->
-         <div id="portfolio">
-           <div class="container pf-container">
-            <div class="section-title text-center center">
-             <h2>Portfolio</h2>
-             <hr>
+          <div class="row" id="middle-row">
+            <div class="col-xs-1">
+              <h4 class="center vertical-text"> <a class="text-design img-hover" onclick="about()"> ABOUT  </a> </h4>
+            </div>
+            <div class="col-xs-10 center">
+              <div class="logo">
+                <img src="img/logo.png" class="logo-img">
+              </div>
            </div>
-           <div class="categories">
-             <ul class="cat">
-              <li>
-               <ol class="type">
-                <li><a href="#" data-filter="*" class="active">Tout voir</a></li>
-                <li><a href="#" data-filter=".design">Design</a></li>
-                <li><a href="#" data-filter=".multimedia">Multimédia</a></li>
-                <li><a href="#" data-filter=".photo">Photographie</a></li>
-                <li><a href="#" data-filter=".programming">Programmation</a></li>
-                <li><a href="#" data-filter=".drawing">Dessins</a></li>
-              </ol>
-            </li>
-          </ul>
-          <div class="clearfix"></div>
+           <div class="col-xs-1">
+               <h4 class="center vertical-text right-menu" id="right-menu-item"> <a class="text-design img-hover" onclick="contact()"> CONTACT </a> </h4>            
+           </div>
+          </div>
+          <div class="row">
+           <h4 class="col-md-12 center bottom-text"> <a class="text-design img-hover" onclick="projects()"> PROJECTS  </a> </h4>
+          </div>
+      </div>  
+  </div>
+  <div class="overlay container" id="contact-page">
+   <div class="fixed-nav">
+      <div class="col-sm-2"> 
+        <a onclick="home()"> <img class="my-nav-logo" src="img/logo.png"> </a>
+      </div>
+      <div class="my-nav-inline col-sm-8"> 
+        <ul>
+          <li>
+            <h4> 
+              <a class="text-design img-hover" onmouseenter="linkImage(this)" onmouseleave="unlinkImage(this)" onclick="projects()"> PROJECTS </a> 
+            </h4>
+          </li>
+          <li>
+            <h4> 
+              <a class="text-design img-hover" onmouseenter="linkImage(this)" onmouseleave="unlinkImage(this)" onclick="about()"> ABOUT </a> 
+            </h4>
+          </li>
+          <li>
+            <h4> 
+              <a class="text-design img-hover active-link"> CONTACT </a> 
+            </h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="title">
+        <div class="row">
+          <h1 class="text-design col-md-12 center"> CONTACT </h1>
         </div>
         <div class="row">
-         <div class="portfolio-items">
-          <div class="col-sm-6 col-md-3 col-lg-3 design">
-           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="#portfolio-item1"  title="Project description" data-toggle="modal">
-             <div class="hover-text">
-              <h4> Out of time</h4>
-              <small>Web Design</small> </div>
-              <img src="img/portfolio/outOftime-small.jpg" class="img-responsive" alt="Out of time"> </a> 
+          <div class="col-md-12 center line">
+            <img src="img/projects-big.png">
+          </div>
+        </div>
+      </div>
+      <div class="row intro-contact">
+        <p class="col-sm-12 center"> 
+          If you want to talk about a project, an idea or just say bonjour, you are in the right place!
+        </p>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-12 center">
+            <p> 
+              To give me a call <br>
+              <b>+1 778 751 9544</b>
+            </p>
+            <p> 
+              To shoot me an email <br>
+              <b> julie_puech@thecdm.ca </b>
+            </p>
+            <p>
+              To contact me right away<br>
+              <b> THE form</b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="the-form">
+        <div class="row">
+          <div class="col-sm-12 center">
+            <h2 class="text-design line"> THE FORM </h2>
+            <img class="line-right" src="img/who-am-i-finish-line.png">
+          </div>
+        </div>
+        <form action="https://formspree.io/julie_puech@thecdm.ca" method="POST">
+          <div class="row input-form">
+            <div class="col-sm-6">
+              <p> Name </p>
+               <input type="text" name="name" value="">
+            </div>
+            <div class="col-sm-6">
+              <p> E-mail </p>
+              <input type="text" name="email" value="">
             </div>
           </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 photo design">
-         <div class="portfolio-item">
-          <div class="hover-bg"> <a href="#portfolio-item2" title="Project description"  data-toggle="modal" >
-           <div class="hover-text">
-            <h4>Splash</h4>
-            <small>Photographie & Design</small> 
+          <div class="row input-form">
+            <div class="col-sm-12">
+              <p> Subject </p>
+              <input type="text" name="_subject" value="">
+            </div>
           </div>
-          <img src="img/portfolio/splash-small.jpg" class="img-responsive" alt="Slash"> </a> 
+          <div class="row input-form">
+            <div class="col-sm-12">
+              <p> Message</p>
+             <textarea rows="8" cols="1" name="message"></textarea>
+            </div>
+          </div>
+          <div class="row input-form">
+            <div class="col-sm-12 right">
+              <button type="submit">
+                <img class="brush" src="img/button-bckgrd.png">
+                <h3 class="text-design">SEND</h3>
+              </button>
+            </div>
+          </div>
+        </form> 
+      </div>
+    </div>
+  </div>
+  <div class="overlay container" id="about-page">
+    <div class="fixed-nav">
+      <div class="col-sm-2"> 
+        <a onclick="home()"> <img class="my-nav-logo" src="img/logo.png"> </a>
+      </div>
+      <div class="my-nav-inline col-sm-8"> 
+        <ul>
+          <li>
+            <h4> 
+              <a class="text-design img-hover" onmouseenter="linkImage(this)" onmouseleave="unlinkImage(this)" onclick="projects()"> PROJECTS </a> 
+            </h4>
+          </li>
+          <li>
+            <h4> 
+              <a class="text-design img-hover active-link"> ABOUT </a> 
+            </h4>
+          </li>
+          <li>
+            <h4> 
+              <a class="text-design img-hover" onmouseenter="linkImage(this)" onmouseleave="unlinkImage(this)" onclick="contact()"> CONTACT </a> 
+            </h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="title">
+        <div class="row">
+          <h1 class="text-design col-md-12 center"> ABOUT </h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12 center line">
+            <img src="img/projects-big.png">
+          </div>
+        </div>
+      </div>
+      <div class="row about">
+        <div class="col-sm-5 pics">
+          <img src="img/about-profile.png" class="about-profile">
+          <div class="right">
+            <img src="img/about-brush.png" class="about-brush">
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <h4 class="center"> <b> Hi & Welcome ! </b> </h4>
+          <p> <br>
+            I'm Julie PUECH, a 22 year-old interactive media developer and graphic designer from Toulouse, France. 
+          </p>
+          <p>
+            After two years of intensive Maths and Physics, I got into a french 'école d'ingénieur' which was providing classes focused on blending art and sciences. There, I discorved a real interest in developping interactive and creative applications and projects, while working into a multidisciplinary team. Wanting to further my knowledge and experience in that field, I joined the Center For Digital Media to persue my master's degree in Digital Media. 
+          </p>
+          <p> 
+            I clearly have a more scientific background but I have always cultivated my creative side, taking drawing classes while growing up and embracing the design classes I got in school. Knowing both the creative side and the developer perspective is a real asset when working in a team because it allows me to better understand and pedict the requirements and constrainst of designers and developers.
+          </p>
+          <p>
+            I recently worked on a AR project and can't wait to explore more in this field. Everything from dev to designing the user experience is new and exciting in this space and I truely believe big things are comming ! 
+          </p>
+          <p> When I am not working, I try to spend most of my time hiking and backpacking. I enjoy mountains and the outdoors in all seasons, liking how it can really make you feel like you are in a bubble that technology cannot reach (too much). I am a paradox in that way... loving to work on new innovative projects but liking to step away and enjoy nature without any distractions.
+          </p>
+        </div>
+      </div>
+      <div class="row clickables">
+        <div class="col-sm-6 center">
+          <h3 class="text-design"> FOLLOW ME ONLINE </h3>
+          <ul class="socials">
+            <li>
+              <a href="https://twitter.com/FreakyyJulie"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/JulieCapucine"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/freakyjulie/"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://fr.linkedin.com/in/julie-puech-723242118"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/channel/UCg9twLewEK8-7ztUurft6NQ"><i class="fa fa-youtube"></i></a>
+            </li>
+        </ul>
+        </div>
+        <div class="col-sm-6 center">
+          <h3 class="text-design"> DOWNLOAD MY RESUME </h3>
+          <button type="submit" onclick="window.open('CV_JuliePUECH_english.pdf')">
+            <img class="brush" src="img/button-bckgrd.png">
+            <h3 class="text-design">PDF</h3>
+          </button>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-3 col-lg-3 multimedia">
-     <div class="portfolio-item">
-      <div class="hover-bg"> <a href="#portfolio-item3" title="Project description"  data-toggle="modal">
-       <div class="hover-text">
-        <h4>Interactive Delaunay (W.I.P)</h4>
-        <small>Installation interactive</small>
+  </div>
+  <div class="overlay container" id="project-page">
+     <div class="fixed-nav">
+      <div class="col-sm-2"> 
+        <a onclick="home()"> <img class="my-nav-logo" src="img/logo.png"> </a>
       </div>
-      <img src="img/portfolio/ptut-small.jpg" class="img-responsive" alt="Interactive Delaunay"> </a> 
-    </div>
-  </div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3 multimedia">
- <div class="portfolio-item">
-  <div class="hover-bg"> <a href="#portfolio-item4" title="Project description" data-toggle="modal">
-   <div class="hover-text">
-    <h4>Sine Sensus</h4>
-    <small>Court métrage</small> 
-  </div>
-  <img src="img/portfolio/sineSensus-small.jpg" class="img-responsive" alt="Project Title"> </a> 
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3 multimedia">
- <div class="portfolio-item">
-  <div class="hover-bg"> <a href="#portfolio-item5" title="Project description" data-toggle="modal">
-   <div class="hover-text">
-    <h4>Fedodo</h4>
-    <small>Animation</small> 
-  </div>
-  <img src="img/portfolio/fedodo-small.jpg" class="img-responsive" alt="Fedodo"> </a> 
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3 multimedia">
- <div class="portfolio-item">
-  <div class="hover-bg"> <a href="#portfolio-item6" title="Project description" data-toggle="modal">
-   <div class="hover-text">
-    <h4>Le Spleen</h4>
-    <small>Sound Design</small> 
-  </div>
-  <img src="img/portfolio/spleen-small.jpg" class="img-responsive" alt="Spleen"> </a> 
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3 programming">
- <div class="portfolio-item">
-  <div class="hover-bg"> <a href="#portfolio-item7" title="Project description" data-toggle="modal">
-   <div class="hover-text">
-    <h4>Imagimp</h4>
-    <small>Logiciel de type Gimp (en C)</small> 
-  </div>
-  <img src="img/portfolio/imagimp-small.jpg" class="img-responsive" alt="imagimp"> </a> 
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3 multimedia">
- <div class="portfolio-item">
-  <div class="hover-bg"> <a href="#portfolio-item8" title="Project description" data-toggle="modal">
-   <div class="hover-text">
-    <h4>Palms Island</h4>
-    <small>Animation</small> </div>
-    <img src="img/portfolio/palmier-small.jpg" class="img-responsive" alt="Palms Island"> </a> 
-  </div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3 programming">
- <div class="portfolio-item">
-  <div class="hover-bg"> <a href="#portfolio-item9" title="Project description" data-toggle="modal">
-   <div class="hover-text">
-    <h4>Outline filter</h4>
-    <small>script Python</small> 
-  </div>
-  <img src="img/portfolio/python-small.jpg" class="img-responsive" alt="python"> </a> 
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3 programming">
- <div class="portfolio-item">
-  <div class="hover-bg"> <a href="#portfolio-item10" title="Project description" data-toggle="modal">
-   <div class="hover-text">
-    <h4>The World of Lonny</h4>
-    <small>Jeu en OpenGL</small> 
-  </div>
-  <img src="img/portfolio/lonny-small.png" class="img-responsive" alt="python"> </a> 
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3 drawing">
- <div class="portfolio-item">
-  <div class="hover-bg"> <a href="#portfolio-item11" title="Project description" data-toggle="modal">
-   <div class="hover-text">
-    <h4>Wings study</h4>
-    <small>Dessins</small> 
-  </div>
-  <img src="img/portfolio/wings-small.jpg" class="img-responsive" alt="drawing"> </a> 
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3 drawing">
- <div class="portfolio-item">
-  <div class="hover-bg"> <a href="#portfolio-item12" title="Project description" data-toggle="modal">
-   <div class="hover-text">
-    <h4>Travail en atelier</h4>
-    <small>Dessins</small> 
-  </div>
-  <img src="img/portfolio/studio-small.png" class="img-responsive" alt="drawing"> </a> 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Contact Section -->
-<div id="contact" class="text-center">
-	<div class="container">
-		<div class="section-title center">
-			<h2>Contact</h2>
-			<hr>
-		</div>
-		<div class="col-md-8 col-md-offset-2">
-			<div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-				<p>Paris, France</p>
-			</div>
-			<div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-				<p>julie.puech31@yahoo.fr</p>
-			</div>
-			<div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-				<p> +33 6 22 19 39 49</p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="col-md-8 col-md-offset-2">
-      <div class="social">
-      	<ul>
-      		<!--   <li><a href="#"><i class="fa fa-facebook"> </i></a></li> -->
-      		<li><a href="https://twitter.com/FreakyyJulie"><i class="fa fa-twitter"></i></a></li>
-      		<li><a href="https://github.com/JulieCapucine"><i class="fa fa-github"></i></a></li>
-      		<li><a href="https://www.instagram.com/freakyjulie/"><i class="fa fa-instagram"></i></a></li>
-      		<li><a href="https://fr.linkedin.com/in/julie-puech-723242118"><i class="fa fa-linkedin"></i></a></li>
-      		<li><a href="https://www.youtube.com/channel/UCg9twLewEK8-7ztUurft6NQ"><i class="fa fa-youtube"></i></a></li>
-      	</ul>
+      <div class="my-nav-inline col-sm-8"> 
+        <ul>
+          <li>
+            <h4> 
+              <a class="text-design img-hover active-link" > PROJECTS </a> 
+            </h4>
+          </li>
+          <li>
+            <h4> 
+              <a class="text-design img-hover" onmouseenter="linkImage(this)" onmouseleave="unlinkImage(this)" onclick="about()"> ABOUT </a> 
+            </h4>
+          </li>
+          <li>
+            <h4> 
+              <a class="text-design img-hover" onmouseenter="linkImage(this)" onmouseleave="unlinkImage(this)" onclick="contact()"> CONTACT </a> 
+            </h4>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
-<div id="footer">
-	<div class="container text-center">
-		<div class="fnav">
-			<p>Copyright &copy; 2017 Julie PUECH. </p>
-		</div>
-	</div>
-</div>
-
-
-
-<div class="portfolio-modal modal fade" id="portfolio-item1" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-content">                 
-		<div class="container-portfolio">
-			<div class="close-modal close" data-dismiss="modal"> </div>
-			<div class="project-title">
-				<h2> OUT OF TIME </h2>
-				<h4> Web Design </h4>
-				<small> <a href="http://perso-etudiant.u-pem.fr/~jpuech/" target="_blank"> http://perso-etudiant.u-pem.fr/~jpuech/ </a> </small> <br>
-        <small> <a href="./OutOfTime_Dossier.pdf" target="_blank"> Le Rapport </a> </small>
-			</div>
-			<div class="project-description">
-				<img src="./img/content/OOT_wagon_logo.jpg" class="content-img img-responsive">
-				<p> Out of time  est un site éditorial de voyage. Le contenu proposé offre une nouvelle approche sur le voyages dans les lieux abandonnés et isolés."Abandonnés" perçu dans le sens "laissé à l'abandon", mais aussi abandonné dans le sens de reculé, loin de toute population.
-        Ce qui semble lier ce type de lieux est leur intemporalité, cette sensation de ne pas savoir de quelle époque ils viennent et dans quelle époque on se trouve lorsque nos pieds les arpentent. Le design et la narration de ce projet a été orienté par ces éléments.
-         </p> <br>
-				<p> Pour ce projet, j'ai été en charge du design (maquettes, éléments graphiques, design du rapport)</p>
-				<img src="./img/content/OOT_home.jpg" class="content-img img-responsive"> 
-				<img src="./img/content/OOT_articles.jpg" class="content-img img-responsive col-sm-12 col-md-6 col-lg-6"> 
-				<img src="./img/content/OOT_Recherche.jpg" class="content-img img-responsive col-sm-12 col-md-6 col-lg-6"> 
-				<p> Accéder au site <a href="http://perso-etudiant.u-pem.fr/~jpuech/"> <strong> ici </strong></a> et retrouver notre rapport de 100 pages (avec le processus de création du début à a fin, du concept au design) <a href="./OutOfTime_Dossier.pdf" > <strong> ici </strong></a>.</p>
-				<p>Projet réalisé en 2016 avec <a href="https://fr.linkedin.com/in/vanessa-bar-85010092"> Vanessa BAR </a> et <a href="https://fr.linkedin.com/in/elise-ritoux-97b74612b"> Elise RITOUX </a>
-				</p>
-			</div>
-		</div>            
-	</div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item2" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-content"> 
-		<div class="container-portfolio">
-			<div class="close-modal close" data-dismiss="modal"> </div>
-			<div class="project-title">
-				<h2> Splash </h2>
-				<h4> Photographie & Design </h4>
-			</div>
-			<div class="project-description">
-				<p> Parcourez le magazine <a href="./splashWithoutPortrait.pdf"> <strong> ici !</strong></a> </p> <br>
-				<div class="row">
-          <img src="./img/content/SPL_pink.jpg" class="content-img img-responsive col-sm-12 col-md-6 col-lg-6"> 
-          <img src="./img/content/SPL_circleMix.jpg" class="content-img img-responsive col-sm-12 col-md-6 col-lg-6"> 
+    <div class="content">
+      <div class="title">
+        <div class="row">
+          <h1 class="text-design col-md-12 center"> PROJECTS </h1>
         </div>
-        <p> Un magazine de photographie autour du thème de l'eau. Est inclus : </p>
-        <ul class="indent-list"> <li> <p> une série de <strong> portraits </strong> de plein pied (les photos ont été grisées dans le pdf car nous ne disposons pas de l'accord de diffusion des personnes photographiées) </p> </li>
-         <li> <p> deux séries de <strong> photographies d'architecture </strong> de la place Pablo Picasso à Noisy-Le-Grand (93) et du pont Alexandre III à Paris (75) </p> </li>
-         <li> <p> un <strong> reportage photographique </strong> sur la patinoire de Noël sur les Champs-Elysées à Paris </p> </li>
-         <li> <p> une  <strong> critique de l'exposition </strong> "Build and Destroy" de David de Beyter au Centre Photographique d'Ile-de-France </p> </li>
-         <li> <p> un <strong> projet créatif </strong> autour de l'encre et de l'eau </p></li>
-       </ul>
-       <br>
-       <p> Sur ce projet, j'ai été en charge du design et du projet créatif en particulier. Je me suis aussi chargée de la rédaction du contenu. Toutes les décisions autour des photos (cadrage, sujet, ...) ont été prises en équipe. </p> <br>
-       <div class="row">
-         <img src="./img/content/SPL_green.jpg" class="content-img img-responsive col-sm-12 col-md-6 col-lg-6"> 
-         <img src="./img/content/SPL_mix.jpg" class="content-img img-responsive col-sm-12 col-md-6 col-lg-6"> 
-       </div>
-       <p> Venez jeter un oeil au magazine <a href="./SplashWithoutPortrait.pdf"> <strong> ici !</strong></a> </p>
-       <br>
-      <p>Ce projet à 5 a été réalisé au sein de l'IMAC en 2016</p>
-     </div>
-   </div>
- </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item3" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-content"> 
-		<div class="container-portfolio">
-			<div class="close-modal close" data-dismiss="modal"> </div>
-			<div class="project-title">
-				<h2> Interactive Delaunay (W.I.P)</h2>
-				<h4> Installation interactive</h4>
-			</div>
-			<img src="./img/content/PTUT_design.jpg" class="content-img img-responsive col-sm-12 col-md-12 col-lg-12"> 
-
-
-
-			<p> <strong> Interactive Delaunay </strong> est une installation qui se sert du son et du visuel pour créer une experience unique pour le specteur. C'est dans le cadre d'un projet tuteuré à l'IMAC que nous dévelopons ce projet, sur toute l'année. </p>
-      <br> <p><strong> Le setup : </strong> Dans une pièce sombre, on dispose un pupitre au centre, des enceintes sur les cotés et un projecteur permettant la visualisation des formes sur le mur face au pupitre. Un leapmotion est placé sur le pupitre. </p>
-      <br> <p><strong>Le concept : </strong> L'utilisateur entre dans l'esprit de l'artiste francais Robert Delaunay quand il passe les frontières de notre installation. Il est alors transporté d'un univers à l'autre, et peut, à tout moment, interagir avec celui-ci, influencant tout le processus visuel et sonore.
-      Les différents univers, que nous appelons " états d'esprit", sont pensés de façon à intégrer l'esthétique des Delaunay. Parmis les états d'esprit que nous comptons développer, on peut citer : l'état d'esprit enfantin, robotique/futuriste, psychaldelique mais aussi épique ou triste.</p>
-      <br><p><strong> Le fonctionnement :</strong>
-      Nous utilisons un leapmotion pour detecter les mouvements des mains de l'utilisateur et, après avoir analyser ces derniers, notre programe évolue en conséquence, visuellement et accoustiquement. Les gestes sont mappés et associés à des réponses prédéfinies (visuelles et sonores) qui sont différentes selon "l'état d'esprit" de notre installation. 
-			</p> <br>
-			<p> En temps que directeur artistique de ce projet, j'ai été en charge de développer la démarche proposée par notre installation, j'ai aussi développé les éléments graphiques afin qu'ils rappellent l'esthétique des Delaunay. Je me suis aussi chargée de tester les différentes possibilités graphiques offertes par Openframeworks et d'aider pour le mapping des gestes. </p>
-
-			<div class="videowrapper">
-				<iframe width="857" height="507" src="https://player.vimeo.com/video/217138011" frameborder="0" allowfullscreen></iframe>
-			</div>
-
-			<p> Le programme a été développé avec OpenFrameWorks (C++). Vous pouvez trouver le code source <a  href="https://github.com/datross/shape"> ici ! </a></p>
-			<br>
-   </div>
-
- </div>
-</div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item4" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-content"> 
-		<div class="container-portfolio">
-			<div class="close-modal close" data-dismiss="modal"> </div>
-			<div class="project-title">
-				<h2> Sine Sensus</h2>
-				<h4> Court métrage</h4>
-			</div>
-			<p> Un court métrage sur la perte des sens.</p>
-			<div class="videowrapper">
-				<iframe width="857" height="507" src="https://www.youtube.com/embed/NI8_lPDTaLA" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<p> Ce projet a été réalisé en 2016 avec <a href="https://fr.linkedin.com/in/marion-vila-ab626795 "> Marion VILA </a>, <a href="https://fr.linkedin.com/in/elise-ritoux-97b74612b"> Elise RITOUX </a>, Melanie PAQUES.</p>
-		</div>
-
-	</div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item5" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-content"> 
-		<div class="container-portfolio">
-			<div class="close-modal close" data-dismiss="modal"> </div>
-			<div class="project-title">
-				<h2> Fedodo</h2>
-				<h4> Animation</h4>
-			</div>
-			<p> Ce projet est une experimentation avec After Effects sous la forme d'une courte publicité pour une veilleuse pour enfant. </p>
-			<div class="videowrapper">
-				<iframe width="857" height="507" src="https://www.youtube.com/embed/dEXaCaW3prY" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<p> Ce projet a été réalisé avec <a href="https://fr.linkedin.com/in/vanessa-bar-85010092"> Vanessa BAR </a>  </p> 		
-   </div>
-
- </div>
-</div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item6" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-content"> 
-		<div class="container-portfolio">
-			<div class="close-modal close" data-dismiss="modal"> </div>
-			<div class="project-title">
-				<h2> Le Spleen</h2>
-				<h4> Sound Design</h4>
-			</div>
-			<p> Le Spleen de Paris de Charles Beaudelaire a toujours été un poème qui me transportait dans un univers glauque tout en décrivant parfaitement mon état d'esprit. Lors d'un projet de design sonore, j'ai donc décidé de créer une ambiance autour de ce célèbre poème en utilisant ProTools. </p>
-			<div class="videowrapper">
-				<iframe width="857" height="507" src="https://www.youtube.com/embed/zyYe68ZATGQ" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<p> Ce projet a été réalisé avec  <a href="https://fr.linkedin.com/in/marion-vila-ab626795 "> Marion VILA </a>.</p> 
-			
-		</div>
-
-	</div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item7" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-content"> 
-		<div class="container-portfolio">
-			<div class="close-modal close" data-dismiss="modal"> </div>
-			<div class="project-title">
-				<h2> Imagimp</h2>
-				<h4>Logiciel de type Gimp (en C)</h4>
-			</div>
-
-			<p> Le but de ce projet était de réaliser un petit logiciel de retouche d'image (une version simplifiée de Gimp), en langage C. Les fonctionnalités principales sont: lire une image .ppm, ajouter et supprimer des calques, effectuer des transformations et appliquer des filtres dessus, ainsi que de pouvoir sauvergarder le résultat final. </p> <br>
-
-     <div class="row">
-       <img src="./img/content/C_normal.png" class="content-img img-responsive col-sm-12 col-md-4 col-lg-4"> 
-       <img src="./img/content/C_sepia.png" class="content-img img-responsive col-sm-12 col-md-4 col-lg-4"> 
-       <img src="./img/content/C_invert.png" class="content-img img-responsive col-sm-12 col-md-4 col-lg-4"> 
-     </div>
-     <p> Accédez au code source du projet sur Github <a href="https://github.com/JulieCapucine/imagimp"> ici </a> </p>
-     <p>Ce projet a été réalisé en binome au sein de l'IMAC en 2016</p> <br>
-   </div>
-
- </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item8" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-content"> 
-		<div class="container-portfolio">
-			<div class="close-modal close" data-dismiss="modal"> </div>
-			<div class="project-title">
-				<h2> Palms Island</h2>
-				<h4>Animation</h4>
-			</div>
-			<p> Une petite animation After Effects à propos d'un pirate et d'un singe.</p>
-			<div class="videowrapper">
-				<iframe width="857" height="507" src="https://www.youtube.com/embed/Ywx6N5Q1d0Q" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<p>Réalisé en 2015 </p> <br>
-		</div>
-	</div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item9" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content"> 
-    <div class="container-portfolio">
-      <div class="close-modal close" data-dismiss="modal"> </div>
-      <div class="project-title">
-        <h2>Outline filter</h2>
-        <h4>script python</h4>
+        <div class="row">
+          <div class="col-sm-12 center line">
+            <img src="img/projects-big.png">
+          </div>
+        </div>
       </div>
-      <p> Un script python qui traite une image pour n'obtenir que ce contour en utilisant des filtre gaussien et des gradients. La taille du masque et les seuilles d'acceptation sont modifiables par l'utilisateur.</p>
-      <img src="./img/content/PY_test.png" class="content-img img-responsive col-sm-12 col-md-12 col-lg-12"> 
-      <p>Réalisé en 2013 </p> <br>
+     <div class="row intro-projects">
+        <p class="col-sm-12 center"> 
+          Take a look at a selection of projects I have worked on (and enjoyed doing! ). Having a diverse skill set allowed me to work on many different projects, from AR development to logo creation, from game design to art installation: you might be surprised! 
+        </p>
+      </div>
+      <div class="row center cat">
+        <div class="col-sm-2"></div>
+        <button class="col-sm-3 choices" data-filter=".dev">
+          <img class="brush" src="img/button-bckgrd.png">
+          <h5 class="text-design">DEV</h3>
+        </button>
+         <button class="col-sm-3 choices" data-filter=".graphic">
+          <img class="brush" src="img/button-bckgrd.png">
+          <h5 class="text-design">GRAPHIC DESIGN</h3>
+        </button>
+        <button class="col-sm-3 choices see-all" data-filter="*">
+          <img class="brush" src="img/button-bckgrd.png">
+          <h5 class="text-design">SEE ALL</h3>
+        </button>
+      </div>
+      <div class="row center project-row">
+        <div class="col-sm-6 project-preview dev" data-toggle="modal">
+            <a href="project-kaa.html" class="project-link">
+              <div class="see-more"> 
+                <img src="img/plus.png" class="icon-plus">
+                <p class="text-design"> learn more </p>
+              </div>
+              <div class="small-description">
+                <h4 class="text-design">Kaa the Koala </h4>
+                <p> Become a koala and save your home ! </p>
+              </div>
+              <img src="img/preview/preview-kaa.png" class="project-picture" >   
+            </a>
+        </div>
+        <div class="col-sm-6 project-preview graphic" data-toggle="modal"">
+            <a href="project-visual-poetry.html" class="project-link">
+              <div class="see-more"> 
+                <img src="img/plus.png" class="icon-plus">
+                <p class="text-design"> learn more </p>
+              </div>
+              <div class="small-description">
+                <h4 class="text-design">Visual Poetry </h4>
+                <p> Poems & visual exploration </p>
+              </div>
+              <img src="img/preview/preview-visual-poetry.png" class="project-picture" >   
+            </a>
+        </div>
+        <div class="col-sm-6 project-preview dev graphic" data-toggle="modal">
+            <a href="project-interactive-delaunay.html" class="project-link">
+              <div class="see-more"> 
+                <img src="img/plus.png" class="icon-plus">
+                <p class="text-design"> learn more </p>
+              </div>
+              <div class="small-description">
+                <h4 class="text-design"> Delaunay's Interactive Dream</h4>
+                <p> Art Installation w. gestures, visuals and sound </p>
+              </div>
+              <img src="img/preview/preview-delaunay.png" class="project-picture" >   
+            </a>
+        </div>
+        <div class="col-sm-6 project-preview graphic" data-toggle="modal">
+            <a href="project-gites-bleus.html" class="project-link">
+              <div class="see-more"> 
+                <img src="img/plus.png" class="icon-plus">
+                <p class="text-design"> learn more </p>
+              </div>
+              <div class="small-description">
+                <h4 class="text-design"> Les gîtes bleus</h4>
+                <p> Freelance logo work</p>
+              </div>
+              <img src="img/preview/preview-gites-bleus.png" class="project-picture" >   
+            </a>
+        </div>
+        <div class="col-sm-6 project-preview graphic" data-toggle="modal">
+            <a href="project-oxa-drone.html" class="project-link">
+              <div class="see-more"> 
+                <img src="img/plus.png" class="icon-plus">
+                <p class="text-design"> learn more </p>
+              </div>
+              <div class="small-description">
+                <h4 class="text-design"> Oxa Drone</h4>
+                <p> Freelance logo work </p>
+              </div>
+              <img src="img/preview/preview-oxa.png" class="project-picture" >   
+            </a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+	<script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/gridVibration.js"></script>
 
-<div class="portfolio-modal modal fade" id="portfolio-item10" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content"> 
-    <div class="container-portfolio">
-      <div class="close-modal close" data-dismiss="modal"> </div>
-      <div class="project-title">
-        <h2>The World of Lonny</h2>
-        <h4>jeu en OpenGL </h4>
-      </div>
-      <p> <strong>But du projet : </strong>  créer un jeu où le joueur dirige un aéroglisseur et valide des balises (checkpoints) pour gagner.</p> <br>
-       <div class="row">
-       <img src="./img/portfolio/lonny-small.png" class="content-img img-responsive col-sm-12 col-md-4 col-lg-4"> 
-       <img src="./img/content/LN_interro.png" class="content-img img-responsive col-sm-12 col-md-4 col-lg-4"> 
-       <img src="./img/content/LN_nuit.jpg" class="content-img img-responsive col-sm-12 col-md-4 col-lg-4"> 
-     </div>
-     <br>
-     <p> <strong>Le déroulement : </strong> Pour ce projet en binôme, nous avons développer l'histoire et la façon de la raconter ensemble puis chacun s'est focalisé sur sa tache. Me concernant, j'ai été en charge de tout le développement du jeu en C et OpenGL.
-     </p> 
-      <p> <strong> L'histoire : </strong> Lonny est un petit homme qui c'est perdu sur une planète très lointaine où il se retrouve tout seul. Il doit essayer de retouver son vaisseau pour retourner chez lui. Il a un aéroglisseur qui lui permet de se déplacer sur la planète où i se trouve, qui est recouverte d'eau, de rochers qu'il ne peut franchir et d'algues qui le ralentissent. Pour valider chaque niveau et ramener Lonny à son vaisseau, il faut valider tous les checkpoints. </p>
-      <p> Chaque niveau représente un élément qui explique l'histoire de Lonny. </p>
-      <br><p> En plus du mode histoire, il y a un mode random où les checkpoints apparaissent de manière aléatoire sur la carte et où il faut en valider le plus possible en 1 minute pour battre le meilleur score.
-    </p>
-    <br>
-     <div class="row">
-       <img src="./img/content/LN_menu.png" class="content-img img-responsive col-sm-12 col-md-4 col-lg-4"> 
-       <img src="./img/content/LN_time.png" class="content-img img-responsive col-sm-12 col-md-4 col-lg-4"> 
-       <img src="./img/content/LN_ship.png" class="content-img img-responsive col-sm-12 col-md-4 col-lg-4"> 
-     </div>
-     <br>
-      <p>Ce projet a été réalisé en 2 semaines en 2016 (lien vers l'archive du projet et le rapport <a href="./theWorldOfLonny.tar.gz" > <strong> ici! </strong></a> )</p> <br>
-    </div>
-  </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item11" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content"> 
-    <div class="container-portfolio">
-      <div class="close-modal close" data-dismiss="modal"> </div>
-      <div class="project-title">
-        <h2>Etude d'ailes</h2>
-        <h4> Dessins </h4>
-      </div>
-      <div class="row">
-       <img src="./img/content/WI_dragon.jpg" class="content-img img-responsive col-sm-12 col-md-12 col-lg-12"> 
-     </div>
-     <p>Etude d'ailes  - encre et crayon sur papier</p> <br>
-     <div class="row">
-      <img src="./img/content/WI_inkBlack.jpg" class="content-img img-responsive col-sm-12 col-md-12 col-lg-12">
-    </div>
-    <div class="row">
-      <img src="./img/content/WI_blck.jpg" class="content-img img-responsive col-sm-12 col-md-12 col-lg-12"> 
-    </div>
-    <div class="row">
-     <img src="./img/content/WI_monstre.jpg" class="content-img img-responsive col-sm-12 col-md-12 col-lg-12"> 
-   </div>
-   <div class="row">
-    <img src="./img/content/WI_wings.jpg" class="content-img img-responsive col-sm-12 col-md-12 col-lg-12"> 
-  </div>
-</div>
-</div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolio-item12" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content"> 
-    <div class="container-portfolio">
-      <div class="close-modal close" data-dismiss="modal"> </div>
-      <div class="project-title">
-        <h2>Travail en atelier</h2>
-        <h4> Dessins </h4>
-      </div>
-      <div class="row">
-       <img src="./img/content/DS_cubes.png" class="content-img img-responsive col-sm-6"> 
-       <img src="./img/content/DS_poupees.png" class="content-img img-responsive col-sm-6"> 
-     </div>
-     <p>Ces dessins sont des études d'après nature effectués lors des deux ans que j'ai passé à l'atelier de <a href="http://catherine-escudie.com/"> Catherine Escudié </a> </p> <br>
-     <div class="row">
-      <img src="./img/content/DS_pinceaux.png" class="content-img img-responsive col-sm-12 col-md-12 col-lg-12">
-    </div>
-    <div class="row">
-      <img src="./img/content/DS_livre.png" class="content-img img-responsive col-sm-12 col-md-12 col-lg-12"> 
-    </div>
-
-
-</div>
-</div>
-</div>
-
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
-<script src="js/p5.min.js"></script>
-<script src="js/sketch.js"></script>
 </body>
+ 
 </html>
