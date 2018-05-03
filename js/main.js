@@ -218,6 +218,7 @@ function Main() {
 	var link = document.location.href.split("/");
 	var linkIO = document.location.href.split(".");
 	if (((link[link.length - 1]) == "index.html") || (linkIO[link.length - 1] == "io")) {
+		console.log("entered the right loop");
 		OnStartAndResize();
 		SetCurrentPage();
 		SetButtonImage();
