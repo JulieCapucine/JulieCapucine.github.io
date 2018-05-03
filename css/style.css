@@ -1,4 +1,4 @@
-body, p {
+body, p, footer {
 	/*font-family: 'Josefin Sans', sans-serif;*/
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
@@ -483,6 +483,46 @@ button.choices h5 {
 	margin-top: -40px;
     margin-left: 1.5em;
     font-size: 18px;
+}
+
+footer {
+	margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+footer img {
+	width: 50%;
+}
+
+footer a {
+	color: #000;
+}
+
+footer a:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+.credits {
+	margin-top: 3em;
+}
+
+.footer-clickables {
+	margin-top: 2em;
+}
+
+h4.footer {
+	margin: 0;
+	padding: 0;
+}
+
+.project-gif {
+	text-align: center;
+}
+
+.project-gif img {
+	padding: 2em;
+	height: 150px;
 }
 
 /*filter - isotope*/
